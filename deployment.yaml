@@ -19,10 +19,10 @@ spec:
       labels:
         app: lms-portal
     spec:
-      containers:
-      - name: lms-container
-        image: yuvaraj93/lms-portal:IMAGE_TAG
-        imagePullPolicy: Always
+  containers:
+  - name: lms-portal
+    image: yuvaraj93/ass_9.1:latest  # Make sure this has 'yuvaraj93'
+
         ports:
         - containerPort: 80
         # Health checks critical for determining deployment failures and auto-rollback
