@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Learning Management Portal</title>
+    <style>
+        :root { --primary: #003366; --secondary: #f4f6f9; --dark: #333; --accent: #d9534f; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; padding: 0; background: var(--secondary); color: var(--dark); }
+        header { background: var(--primary); color: white; padding: 1.5rem; text-align: center; font-size: 1.5rem; font-weight: bold; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+        .container { max-width: 1200px; margin: 2rem auto; padding: 0 1rem; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; }
+        .card { background: white; padding: 1.5rem; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.05); border-top: 4px solid var(--primary); }
+        .card h2 { color: var(--primary); margin-top: 0; border-bottom: 1px solid #ddd; padding-bottom: 0.5rem; }
+        ul { list-style: none; padding: 0; }
+        li { padding: 0.5rem 0; border-bottom: 1px dashed #eee; }
+        .badge { background: var(--accent); color: white; padding: 0.2rem 0.5rem; border-radius: 4px; font-size: 0.8rem; float: right; }
+        footer { text-align: center; padding: 1.5rem; background: var(--primary); color: white; margin-top: 3rem; }
+    </style>
+</head>
+<body>
+
+    <header>🏫 Global University Learning Management Portal</header>
+
+    <main class="container">
+        <!-- Course Info -->
+        <section class="card">
+            <h2>📚 Course Information</h2>
+            <ul>
+                <li><strong>CS-101:</strong> Introduction to Computer Science</li>
+                <li><strong>DEVOPS-302:</strong> CI/CD Pipelines & Cloud Infrastructure</li>
+                <li><strong>MATH-201:</strong> Advanced Linear Algebra</li>
+            </ul>
+        </section>
+
+        <!-- Faculty Profiles -->
+        <section class="card">
+            <h2>👨‍🏫 Faculty Profiles</h2>
+            <ul>
+                <li><strong>Dr. Jane Doe</strong> - Head of DevOps Engineering</li>
+                <li><strong>Prof. Alan Turing</strong> - Lead AI Researcher</li>
+            </ul>
+        </section>
+
+        <!-- Learning Resources -->
+        <section class="card">
+            <h2>📖 Learning Resources</h2>
+            <ul>
+                <li><a href="#">Lecture 1: Intro to Docker Containers.pdf</a></li>
+                <li><a href="#">Lecture 2: Kubernetes Orchestration Deep Dive.pdf</a></li>
+            </ul>
+        </section>
+
+        <!-- Assignment Announcements -->
+        <section class="card">
+            <h2>📢 Assignments</h2>
+            <ul>
+                <li>Assignment 3: Multi-Stage Jenkinsfile <span class="badge">Due Tomorrow</span></li>
+                <li>Lab 4: Multi-replica K8s Deployment <span class="badge">Open</span></li>
+            </ul>
+        </section>
+
+        <!-- Examination Schedules -->
+        <section class="card">
+            <h2>📅 Exam Schedule</h2>
+            <ul>
+                <li>Midterm Exam: DevOps Automation — <strong>Oct 25, 2026</strong></li>
+                <li>Final Project Submission — <strong>Dec 10, 2026</strong></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>&copy; 2026 University Portal v1.0.0. All Rights Reserved.</footer>
+
+</body>
+</html>
